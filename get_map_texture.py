@@ -4,14 +4,17 @@ import skimage.io
 import skimage.util
 import shutil
 
+# タイル確認ページ
+# https://maps.gsi.go.jp/development/tileCoordCheck.html#15/35.6791/139.7486
+# PLATEAUの3次メッシュが地理院タイルズームレベル15に対応
 # 左上の座標を入れる
-# ORIGINAL_URL = "https://cyberjapandata.gsi.go.jp/xyz/{t}/{z}/{x}/{y}.{ext}"
+# ORIGINAL_URL(seamlessphoto) = "https://cyberjapandata.gsi.go.jp/xyz/{t}/{z}/{x}/{y}.{ext}"
 # 232808
 # 103232
 
-X_COORDINATE = input("左上のタイルのx座標を入力 : ")
-Y_COORDINATE = input("左上のタイルのy座標を入力 : ")
-TILE_COUNT = input("タイルの数 : ")
+X_COORDINATE = int(input("左上のタイルのx座標を入力 : "))
+Y_COORDINATE = int(input("左上のタイルのy座標を入力 : "))
+TILE_COUNT = int(input("タイルの数 : "))
 ZOOM_LEVEL = input("ズームレベル(max 18) : ")
 TILE_EXPORT_PATH = "export_tile"
 FIN_EXPORT_PATH = "export"
