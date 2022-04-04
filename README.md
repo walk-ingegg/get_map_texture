@@ -12,7 +12,7 @@
 
 
 ### 使い方
-- [タイル座標確認ページ](https://www.notion.so/walkingegg/184796bf51754072b1cba99698190ea9)にアクセスする。
+- [タイル座標確認ページ](https://maps.gsi.go.jp/development/tileCoordCheck.html#15/35.6673/139.7314)にアクセスする。
 - 欲しい範囲の左上のタイルの座標見つける。
 ---
 - プログラムを実行↓
